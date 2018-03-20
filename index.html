@@ -27,6 +27,10 @@
             <li><a href="#" data-activates="slide-out" class="button"><i class="material-icons">menu</i></a></li>
           </ul>
 
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a class="waves-effect waves-light btn amber darken-1">PUBLICAR GRATIS!</a>
+          </ul>
+
           <ul class="right">
             <li><a href="#" data-activates="slide-out" class="butdton"><i class="material-icons">more_vert</i></a></li>
           </ul>
@@ -67,18 +71,41 @@
 
     <div id="test1" class="col s12">
       <div class="row">
+
+
+
         <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/in1.jpg">
-              <span class="card-title">Card Title</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-            </div>
+        <div class="card">
+          <div class="card-image">
+            <div class="carousel carousel-slider" data-indicators="true">
+  <a class="carousel-item" href="#one!"><img src="images/in1.jpg"></a>
+  <a class="carousel-item" href="#two!"><img src="images/in2.jpg"></a>
+  <a class="carousel-item" href="#three!"><img src="images/in4.jpg"></a>
+  <a class="carousel-item" href="#four!"><img src="images/in5.jpg"></a>
+</div>
+
+
+
+            <span class="card-title"><b>$2500</b></span>
+            <a class="btn-floating activator halfway-fab waves-effect waves-light blue"><i class="material-icons">message</i></a>
+          </div>
+
+          <div class="card-content">
+            <span class="card-title grey-text text-darken-4">DEPARTAMENTO CON ALBERCA<i class="material-icons right">more_vert</i></span>
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          </div>
+
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
           </div>
         </div>
+        </div>
+
+
+
+
+
         <div class="col s12 m3">
           <div class="card">
             <div class="card-image">
@@ -459,6 +486,9 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button").sideNav();
+
+$('.carousel.carousel-slider').carousel({fullWidth: true});
+
       })
     </script>
   </body>
