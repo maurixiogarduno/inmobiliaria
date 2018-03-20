@@ -4,14 +4,14 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--load everything-->
     <script defer src="js/fontawesome-all.js"></script>
     <meta charset="utf-8">
-    <title>Rivol</title>
+    <title>Rivol | Expertos en Bienes Raices</title>
   </head>
 
   <body>
@@ -21,7 +21,7 @@
       <nav class="nav-extended light-green">
 
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo center"><i class="fas fa-home"></i><b>&nbspRivol</b></a>
+          <a href="#" class="brand-logo center"><i class="fas fa-home"></i><b>&nbspRivol.mx</b></a>
 
           <ul class="left">
             <li><a href="#" data-activates="slide-out" class="button"><i class="material-icons">menu</i></a></li>
@@ -39,9 +39,9 @@
 
         <div class="nav-content">
           <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#test1"><i class="fas fa-building"></i>&nbspRentar</a></li>
-            <li class="tab"><a href="#test2"><i class="fas fa-tags"></i>&nbspComprar</a></li>
-            <li class="tab"><a href="#test3"><i class="fas fas fa-star"></i>&nbspVender</a></li>
+            <li class="tab"><a href="#test1"><i class="fas fa-building"></i>&nbspBuscar</a></li>
+            <li class="tab"><a href="#test2"><i class="fas fa-tags"></i>&nbspOfertas</a></li>
+            <li class="tab"><a href="#test3"><i class="fas fas fa-star"></i>&nbspFavoritos</a></li>
           </ul>
         </div>
       </nav>
@@ -63,13 +63,45 @@
        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
      </ul>
 
-      <br />
-      <br />
-      <br />
-
+      <br>
+      <br>
       <!--Fin de navbar-->
 
     <div id="test1" class="col s12">
+
+      <div class="row light-green">
+        <br>
+        <div class="col s12 m12">
+          <div class="card-panel col s12">
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">home</i>
+              <select>
+                <option value="" disabled selected>Estoy buscando un:</option>
+                <option value="1">Inmueble en venta</option>
+                <option value="2">Inmueble en renta</option>
+                <option value="4">Terreno en venta</option>
+                <option value="5">Cuarto en renta</option>
+                <option value="6">Roomie</option>
+              </select>
+            </div>
+
+            <div class="input-field col s8 m4">
+              <i class="material-icons prefix">map</i>
+              <select>
+                <option value="" disabled selected>En:</option>
+                <option value="1">CDMX</option>
+                <option value="2">POLANCO</option>
+                <option value="3">CONDESA</option>
+              </select>
+            </div>
+            <div class="col s4 m2">
+              <br>
+            <a class="waves-effect waves-light btn blue">buscar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div class="row">
         <div class="col s12 m4">
@@ -443,6 +475,7 @@
     <script type="text/javascript">
       $( document ).ready(function(){
         $(".button").sideNav();
+         $('select').material_select();
 
 $('.carousel.carousel-slider').carousel({fullWidth: true});
 
